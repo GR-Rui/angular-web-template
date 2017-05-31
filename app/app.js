@@ -8,20 +8,18 @@ var Site = angular.module('Site', [
   'ngCookies',
   'ngTouch',
   'ui.router',
-  'LocalStorageModule',
   'SiteFilters',
-  'ngResource',
-  'httpPostFix'
+  'ngResource'
 ]);
 
 Site.config(['$stateProvider', '$urlRouterProvider', 'ConfigConst', '$logProvider', '$locationProvider',
   function ($stateProvider, $urlRouterProvider, ConfigConst, $logProvider, $locationProvider) {
     "use strict";
     $logProvider.debugEnabled(ConfigConst.configs.debug);
-    //$locationProvider.html5Mode(true).hashPrefix('!');
-
+    // $locationProvider.html5Mode(true).hashPrefix('');
+    $locationProvider.hashPrefix('');
     $stateProvider
-      .state('test', {url: '/test', templateUrl: 'app/features/demo/demo.html'});
+      .state('test', {url: '/test', templateUrl: 'features/demo/demo.html'});
 
     $urlRouterProvider.otherwise('/test');
 

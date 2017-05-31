@@ -23,16 +23,11 @@
 
   <!-- build:css(.) css/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
   <!-- build:css(.tmp) css/common.css -->
   <!-- libs-->
-  <link rel="stylesheet" href="core/bp-icon-fonts/iconfont.css">
-  <link rel="stylesheet" href="core/css/reset.css">
-  <link rel="stylesheet" href="app/css/function.css">
-  <link rel="stylesheet" href="app/css/style.css">
   <!-- endbuild -->
 
   <!--[if lte IE 8]>
@@ -84,7 +79,6 @@
 </div>
 <!-- build:js(.) js/vendor.js -->
 <!-- bower:js -->
-<script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -92,52 +86,28 @@
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
-<script src="bower_components/moment/moment.js"></script>
-<script src="bower_components/lodash/lodash.js"></script>
-<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-<script src="bower_components/angular-mocks/angular-mocks.js"></script>
-<script src="bower_components/angular-post-fix/postfix.js"></script>
-<script src="bower_components/echarts/dist/echarts.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) js/scripts.js -->
-<script src="app/app.js"></script>
-<script src="app/config.js"></script>
-<script src="core/locale.js"></script>
+<script src="app.js"></script>
+<script src="config.js"></script>
 
 <!-- libs-->
-<!--<script src="core/libs/jqmobi.js"></script>-->
 
 <!-- controllers-->
-<script src="core/layouts/dashboard/dashboard-ctrl.js"></script>
-<script src="core/layouts/nav/nav-ctrl.js"></script>
-<script src="core/layouts/header/header-ctrl.js"></script>
 
 <!-- controllers under features-->
-<script src="app/features/demo/demo-ctrl.js"></script>
-<script src="app/features/temphome/temphome-ctrl.js"></script>
-<script src="app/features/tempdetail/tempdetail.js"></script>
-<script src="core/pages/login/login-ctrl.js"></script>
+<script src="features/demo/demo-ctrl.js"></script>
 
 <!-- services -->
-<script src="core/services/common.js"></script>
-<script src="core/services/user-srv.js"></script>
+<script src="js/services/common.js"></script>
+<script src="js/services/user-srv.js"></script>
 
 <!-- directives-->
-<script src="core/directives/echarts/config.js"></script>
-<script src="core/directives/datepicker/datePicker.js"></script>
-<script src="core/directives/datepicker/directive.js"></script>
-<script src="core/directives/footer/lib/js/footer.js"></script>
-<script src="core/directives/footer/directive.js"></script>
-<script src="core/directives/renderNested.js"></script>
-<script src="core/directives/echarts/line-dir.js"></script>
-<script src="core/directives/echarts/bar-dir.js"></script>
-<script src="core/directives/echarts/pie-dir.js"></script>
 
 <!-- fitlers-->
-<script src="core/filters/verify-phone.js"></script>
+<script src="js/filters/verify-phone.js"></script>
 
 <!-- endbuild -->
 </body>

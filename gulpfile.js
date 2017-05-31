@@ -22,7 +22,7 @@ var lessFiles = ["app/css/**/*.less", "app/directives/**/*.less", "app/layouts/*
 gulp.task('browserSync', function () {
   browserSync.init({
     server: {
-      baseDir: './',
+      baseDir: './app',
       middleware: [proxy]       // add the proxy to browser-sync
     },
     port: 9000,
